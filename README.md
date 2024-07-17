@@ -1,0 +1,3 @@
+### This is a course/section/student registration and attendance recording program, including the usage of Java, Gradle, Socket, Google APIs, MySQL, Docker, Junit Test, GUI(JavaFX), Multi-Threading, MVC Architecture. Please see 'E3 documents' for detailed explanations of the project. 
+
+However, due to the limitation of the GITHUB, you have to replace your Gmail Address to yours and get the credential through Google Gmail API in credentials.json inside the 'shared/src/main/resources'. 

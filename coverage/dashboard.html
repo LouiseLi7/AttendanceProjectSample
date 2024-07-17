@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>AttendanceManager</title>
+    </head>
+
+<body onresize="processTreeMapDashJson(treeMapJson);" >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        AttendanceManager
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Wed Mar 27 2024 20:45:51 UTC</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+        <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+
+
+
+
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                
+                <h3>
+                    Code coverage
+                    <small style="float:right; font-weight: normal">
+                        16 classes,
+                        357 /
+                        763 elements
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.4678899</span>46.8%</div><div style="display: table-cell">
+ <div title="46.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:46.8%"></div></div></div></div>
+                <p><a href="pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    Test results
+                    <small style="float:right; font-weight: normal">
+                        44 /
+                        44 tests
+                        0.04 secs
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                    
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>                                <p><a href="test-pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Code metrics</h3>
+            </header>
+                         
+
+<div id="$statsId" class="aui-item" style="display: ${display}">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">96</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">528</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">139</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">16</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">16</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">1</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">1,921</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">1,026</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">213</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3.8</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">8.69</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">16</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">1.53</div>
+    </div>
+</div>
+
+</div>        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Coverage Distribution</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">                     <img src="img/classDistrubutionChart.png" alt="img/classDistrubutionChart.png" usemap="#classDistrubutionChart.png"/>
+                </div>
+                <map id="classDistrubutionChart.png" name="classDistrubutionChart.png">
+<area shape="rect" coords="293,15,315,206" title="4 classes have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="242,63,264,206" title="3 classes have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="217,159,239,206" title="1 class has 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="191,111,213,206" title="2 classes have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="140,159,162,206" title="1 class has 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="115,159,137,206" title="1 class has 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="89,159,111,206" title="1 class has 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,159,60,206" title="1 class has 0% coverage" alt="" nohref="nohref"/>
+</map>
+            </div>
+        </div>
+        
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Complexity</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">
+                    <img src="img/classComplexityChart.png" alt="img/classComplexityChart.png" usemap="#classComplexityChart.png"/>
+                </div>
+                <map id="classComplexityChart.png" name="classComplexityChart.png">
+<area shape="poly" coords="237,166,234,168,232,166,234,163,237,166,237,166" title="Complexity: 14; Coverage: 73%; Class: TextUserView" alt="" href="edu/duke/ece651/team2/attendancemanager/TextUserView.html#TextUserView"/>
+<area shape="poly" coords="117,197,114,199,112,197,114,194,117,197,117,197" title="Complexity: 4; Coverage: 25%; Class: ProtectedInfo" alt="" href="edu/duke/ece651/team2/attendancemanager/ProtectedInfo.html#ProtectedInfo"/>
+<area shape="poly" coords="202,126,199,128,197,126,199,123,202,126,202,126" title="Complexity: 27; Coverage: 59%; Class: Course" alt="" href="edu/duke/ece651/team2/attendancemanager/Course.html#Course"/>
+<area shape="poly" coords="304,203,302,205,299,203,302,200,304,203,304,203" title="Complexity: 2; Coverage: 100%; Class: EmailAlertsListener" alt="" href="edu/duke/ece651/team2/attendancemanager/EmailAlertsListener.html#EmailAlertsListener"/>
+<area shape="poly" coords="152,18,149,20,147,18,149,15,152,18,152,18" title="Complexity: 62; Coverage: 39%; Class: TextUserController" alt="" href="edu/duke/ece651/team2/attendancemanager/TextUserController.html#TextUserController"/>
+<area shape="poly" coords="207,169,204,171,202,169,204,166,207,169,207,169" title="Complexity: 13; Coverage: 61%; Class: AttendanceSession" alt="" href="edu/duke/ece651/team2/attendancemanager/AttendanceSession.html#AttendanceSession"/>
+<area shape="poly" coords="104,187,102,190,99,187,102,185,104,187,104,187" title="Complexity: 7; Coverage: 20%; Class: PersistenceManager" alt="" href="edu/duke/ece651/team2/attendancemanager/PersistenceManager.html#PersistenceManager"/>
+<area shape="poly" coords="304,200,302,202,299,200,302,197,304,200,304,200" title="Complexity: 3; Coverage: 100%; Class: EventManager" alt="" href="edu/duke/ece651/team2/attendancemanager/EventManager.html#EventManager"/>
+<area shape="poly" coords="242,178,239,181,237,178,239,176,242,178,242,178" title="Complexity: 10; Coverage: 75%; Class: Professor" alt="" href="edu/duke/ece651/team2/attendancemanager/Professor.html#Professor"/>
+<area shape="poly" coords="54,141,52,144,49,141,52,139,54,141,54,141" title="Complexity: 22; Coverage: 0%; Class: App" alt="" href="edu/duke/ece651/team2/attendancemanager/App.html#App"/>
+<area shape="poly" coords="182,129,179,131,177,129,179,126,182,129,182,129" title="Complexity: 26; Coverage: 51%; Class: Lecture" alt="" href="edu/duke/ece651/team2/attendancemanager/Lecture.html#Lecture"/>
+<area shape="poly" coords="232,200,229,202,227,200,229,197,232,200,232,200" title="Complexity: 3; Coverage: 71%; Class: University" alt="" href="edu/duke/ece651/team2/attendancemanager/University.html#University"/>
+<area shape="poly" coords="304,178,302,181,299,178,302,176,304,178,304,178" title="Complexity: 10; Coverage: 100%; Class: AttendanceRecord" alt="" href="edu/duke/ece651/team2/attendancemanager/AttendanceRecord.html#AttendanceRecord"/>
+<area shape="poly" coords="304,178,302,181,299,178,302,176,304,178,304,178" title="Complexity: 10; Coverage: 100%; Class: AttendanceRecord" alt="" href="edu/duke/ece651/team2/attendancemanager/AttendanceRecord.html#AttendanceRecord"/>
+</map>
+            </div>
+        </div>
+        
+                    <div class="dashboard-widget">
+                <header class="dashboard-widget-header">
+                    <h3>Coverage tree map</h3>
+                </header>
+                <div class="dashboard-widget-content">
+                    <div id="infovis" style="width:100%; height:250px;">
+                        <div id="treemap-loader" style="position:relative;top:50px;">
+                            <p>
+                                Generating Coverage Tree Map. Please wait...
+                            </p>
+                            <p>
+                                <img src="img/ajax-loader.gif" alt="Loading Treemap"/>
+                            </p>
+                        </div>
+                    </div>
+                    <p><a href="treemap.html">See more</a></p>
+                </div>
+
+            </div>
+            </div>
+
+
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Top 11 project risks</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                                                                <a class="tag" href="edu/duke/ece651/team2/attendancemanager/TextUserView.html"
+                            style="font-size: 25px;color:#89c495"
+                            title="Average Method Complexity - 2 , Coverage - 73.8% ">TextUserView</a>
+                                    
+                                                                <a class="tag" href="edu/duke/ece651/team2/attendancemanager/Professor.html"
+                            style="font-size: 18px;color:#89c495"
+                            title="Average Method Complexity - 1 , Coverage - 75% ">Professor</a>
+                                    
+                                                                <a class="tag" href="edu/duke/ece651/team2/attendancemanager/AttendanceSession.html"
+                            style="font-size: 22px;color:#fae1a0"
+                            title="Average Method Complexity - 1.625 , Coverage - 61.9% ">AttendanceSession</a>
+                                    
+                                                                <a class="tag" href="edu/duke/ece651/team2/attendancemanager/TextUserController.html"
+                            style="font-size: 25px;color:#e7a19b"
+                            title="Average Method Complexity - 2.067 , Coverage - 39.1% ">TextUserController</a>
+                                    
+                                                                <a class="tag" href="edu/duke/ece651/team2/attendancemanager/PersistenceManager.html"
+                            style="font-size: 27px;color:#d9695f"
+                            title="Average Method Complexity - 2.333 , Coverage - 20.8% ">PersistenceManager</a>
+                                    
+                                                                <a class="tag" href="edu/duke/ece651/team2/attendancemanager/App.html"
+                            style="font-size: 28px;color:#d04437"
+                            title="Average Method Complexity - 2.444 , Coverage - 0% ">App</a>
+                                    
+                                                                <a class="tag" href="edu/duke/ece651/team2/attendancemanager/University.html"
+                            style="font-size: 18px;color:#89c495"
+                            title="Average Method Complexity - 1 , Coverage - 71.4% ">University</a>
+                                    
+                                                                <a class="tag" href="edu/duke/ece651/team2/attendancemanager/Course.html"
+                            style="font-size: 19px;color:#fae1a0"
+                            title="Average Method Complexity - 1.125 , Coverage - 59.6% ">Course</a>
+                                    
+                                                                <a class="tag" href="edu/duke/ece651/team2/attendancemanager/Lecture.html"
+                            style="font-size: 21px;color:#f6c342"
+                            title="Average Method Complexity - 1.444 , Coverage - 51.9% ">Lecture</a>
+                                    
+                                                                <a class="tag" href="edu/duke/ece651/team2/attendancemanager/ProtectedInfo.html"
+                            style="font-size: 25px;color:#de7b72"
+                            title="Average Method Complexity - 2 , Coverage - 25% ">ProtectedInfo</a>
+                                    
+                                                                <a class="tag" href="edu/duke/ece651/team2/attendancemanager/AttendanceStatus.html"
+                            style="font-size: 12px;color:#d04437"
+                            title="Average Method Complexity - 0 , Coverage -  -  ">AttendanceStatus</a>
+                                                    <p><a href="top-risks.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex packages</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.4678899</span>46.8%</div><div style="display: table-cell">
+ <div title="46.8% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:46.8%"></div></div></div></div></td>
+                            <td>
+                                <a href="edu/duke/ece651/team2/attendancemanager/pkg-summary.html">edu.duke.ece651.team2.attendancemanager</a>
+                                <span class="aui-badge" title="Package complexity">213</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex classes</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.39145908</span>39.1%</div><div style="display: table-cell">
+ <div title="39.1% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:39.1%"></div></div></div></div></td>
+                            <td>
+                                <a  href="edu/duke/ece651/team2/attendancemanager/TextUserController.html"  title="edu.duke.ece651.team2.attendancemanager.TextUserController">TextUserController</a>
+                                <span class="aui-badge" title="Class complexity">62</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5955056</span>59.6%</div><div style="display: table-cell">
+ <div title="59.6% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:59.6%"></div></div></div></div></td>
+                            <td>
+                                <a  href="edu/duke/ece651/team2/attendancemanager/Course.html"  title="edu.duke.ece651.team2.attendancemanager.Course">Course</a>
+                                <span class="aui-badge" title="Class complexity">27</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.51898736</span>51.9%</div><div style="display: table-cell">
+ <div title="51.9% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:51.9%"></div></div></div></div></td>
+                            <td>
+                                <a  href="edu/duke/ece651/team2/attendancemanager/Lecture.html"  title="edu.duke.ece651.team2.attendancemanager.Lecture">Lecture</a>
+                                <span class="aui-badge" title="Class complexity">26</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="edu/duke/ece651/team2/attendancemanager/App.html"  title="edu.duke.ece651.team2.attendancemanager.App">App</a>
+                                <span class="aui-badge" title="Class complexity">22</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7380952</span>73.8%</div><div style="display: table-cell">
+ <div title="73.8% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:73.8%"></div></div></div></div></td>
+                            <td>
+                                <a  href="edu/duke/ece651/team2/attendancemanager/TextUserView.html"  title="edu.duke.ece651.team2.attendancemanager.TextUserView">TextUserView</a>
+                                <span class="aui-badge" title="Class complexity">14</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Least tested methods</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+
+                    <tr>
+                        <td align="right">1.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TextUserController.readCSVFiles()&#160;:&#160;ArrayList&lt;Student&gt;" href="edu/duke/ece651/team2/attendancemanager/TextUserController.html?line=328#src-328">TextUserController.readCSVFiles()&#160;:&#160;ArrayList&lt;Student&gt;</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">2.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="App.welcome()&#160;:&#160;void" href="edu/duke/ece651/team2/attendancemanager/App.html?line=114#src-114">App.welcome()&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">3.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TextUserController.readStudents(ArrayList&lt;String&gt;)&#160;:&#160;ArrayList&lt;Student&gt;" href="edu/duke/ece651/team2/attendancemanager/TextUserController.html?line=307#src-307">TextUserController.readStudents(ArrayList&lt;String&gt;)&#160;:&#160;ArrayList&lt;Student&gt;</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">4.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TextUserController.selectCourse(int)&#160;:&#160;int" href="edu/duke/ece651/team2/attendancemanager/TextUserController.html?line=217#src-217">TextUserController.selectCourse(int)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">5.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Lecture.updateForOneStudent(String)&#160;:&#160;boolean" href="edu/duke/ece651/team2/attendancemanager/Lecture.html?line=198#src-198">Lecture.updateForOneStudent(String)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">3</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">6.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="PersistenceManager.generateWholeReport(String,List&lt;AttendanceRecord&gt;)&#160;:&#160;void" href="edu/duke/ece651/team2/attendancemanager/PersistenceManager.html?line=50#src-50">PersistenceManager.generateWholeReport(String,List&lt;AttendanceRecord&gt;)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">2</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">7.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="App.startNewLecture()&#160;:&#160;void" href="edu/duke/ece651/team2/attendancemanager/App.html?line=68#src-68">App.startNewLecture()&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">2</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">8.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Lecture.findEmailThroughID(String)&#160;:&#160;String" href="edu/duke/ece651/team2/attendancemanager/Lecture.html?line=187#src-187">Lecture.findEmailThroughID(String)&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">3</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">9.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TextUserController.logIn(ProtectedInfo)&#160;:&#160;void" href="edu/duke/ece651/team2/attendancemanager/TextUserController.html?line=75#src-75">TextUserController.logIn(ProtectedInfo)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">2</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">10.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TextUserController.keepAddingStudents()&#160;:&#160;ArrayList&lt;Student&gt;" href="edu/duke/ece651/team2/attendancemanager/TextUserController.html?line=200#src-200">TextUserController.keepAddingStudents()&#160;:&#160;ArrayList&lt;Student&gt;</a>
+                            <span class="aui-badge" title="Method complexity">2</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">11.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TextUserController.changeStudentDisplayName(Professor)&#160;:&#160;void" href="edu/duke/ece651/team2/attendancemanager/TextUserController.html?line=408#src-408">TextUserController.changeStudentDisplayName(Professor)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">2</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">12.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TextUserController.displayAttendanceFromCourse(Professor)&#160;:&#160;void" href="edu/duke/ece651/team2/attendancemanager/TextUserController.html?line=427#src-427">TextUserController.displayAttendanceFromCourse(Professor)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">2</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">13.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TextUserController.removeStudentsFromCourse(Professor)&#160;:&#160;void" href="edu/duke/ece651/team2/attendancemanager/TextUserController.html?line=437#src-437">TextUserController.removeStudentsFromCourse(Professor)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">2</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">14.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="App.main(String[])&#160;:&#160;void" href="edu/duke/ece651/team2/attendancemanager/App.html?line=154#src-154">App.main(String[])&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">15.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TextUserController.stopTheLecture()&#160;:&#160;boolean" href="edu/duke/ece651/team2/attendancemanager/TextUserController.html?line=250#src-250">TextUserController.stopTheLecture()&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">3</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">16.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AttendanceSession.lateStudentsName()&#160;:&#160;ArrayList&lt;String&gt;" href="edu/duke/ece651/team2/attendancemanager/AttendanceSession.html?line=95#src-95">AttendanceSession.lateStudentsName()&#160;:&#160;ArrayList&lt;String&gt;</a>
+                            <span class="aui-badge" title="Method complexity">2</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">17.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AttendanceSession.lateStudentsID()&#160;:&#160;ArrayList&lt;String&gt;" href="edu/duke/ece651/team2/attendancemanager/AttendanceSession.html?line=109#src-109">AttendanceSession.lateStudentsID()&#160;:&#160;ArrayList&lt;String&gt;</a>
+                            <span class="aui-badge" title="Method complexity">2</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">18.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TextUserController.readUniversity()&#160;:&#160;University" href="edu/duke/ece651/team2/attendancemanager/TextUserController.html?line=58#src-58">TextUserController.readUniversity()&#160;:&#160;University</a>
+                            <span class="aui-badge" title="Method complexity">2</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">19.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Course.dropStudents(String)&#160;:&#160;boolean" href="edu/duke/ece651/team2/attendancemanager/Course.html?line=195#src-195">Course.dropStudents(String)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">2</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">20.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Course.changeStudentDisplayName(String,String)&#160;:&#160;boolean" href="edu/duke/ece651/team2/attendancemanager/Course.html?line=205#src-205">Course.changeStudentDisplayName(String,String)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">2</span>
+
+                        </td>
+                    </tr>
+                                    </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+                            </div> <!-- tabs-pane active-pane -->
+                        </div>
+
+    <script type="text/javascript" src="jit.js" ></script>
+    <script type="text/javascript" src="treemap-dash-json.js" ></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Wed Mar 27 2024 20:45:51 UTC using coverage data from Wed Mar 27 2024 20:45:51 UTC.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

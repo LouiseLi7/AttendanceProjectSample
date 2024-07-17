@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ComboBox fx:id="CourseSelector" layoutX="194.0" layoutY="92.0" prefHeight="26.0" prefWidth="213.0" />
+      <Label layoutX="259.0" layoutY="55.0" text="Select a course" />
+      <Label layoutX="212.0" layoutY="231.0" text="Enter a name for the new section" />
+      <TextField fx:id="SectionNameField" layoutX="221.0" layoutY="261.0" />
+      <Button fx:id="ConfirmButton" layoutX="206.0" layoutY="314.0" mnemonicParsing="false" text="Confirm" />
+      <Button fx:id="CancelButton" layoutX="342.0" layoutY="314.0" mnemonicParsing="false" text="Cancel" />
+      <ComboBox fx:id="InstructorSelector" layoutX="194.0" layoutY="184.0" prefHeight="26.0" prefWidth="213.0" />
+      <Label layoutX="248.0" layoutY="148.0" text="Select an instructor" />
+   </children>
+</fx:root>

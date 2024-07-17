@@ -1,0 +1,29 @@
+Welcome to the User Registration Portal.
+Would You Like to Work With a Faculty Member or a Student?:
+   1. Student
+   2. Faculty Member
+   3. Quit Program
+
+Welcome, What Student-Option Would You Like?
+   1. Register New Account
+   2. Remove Existing Account
+   3. Update Existing Account
+
+Account Registration Portal:
+
+You are adding a new Student, please provide the required info:
+What's the student's legal name:
+What's the student's display name:
+What's the student's E-Mail:
+What's the University of the Student?
+1. Duke University
+2. UNC
+3. NC State
+Please choose from above from the list above
+What would you like to set as your password?
+Welcome to the User Registration Portal.
+Would You Like to Work With a Faculty Member or a Student?:
+   1. Student
+   2. Faculty Member
+   3. Quit Program
+

@@ -1,0 +1,10 @@
+Student ID,Student Name,Time,Status
+<<<<<<< HEAD
+1282080,Louise Li,Fri Apr 05 12:07:01 EDT 2024,PRESENT
+98765,Someone,Fri Apr 05 12:07:01 EDT 2024,TARDY
+34567,Someoneelse,Fri Apr 05 12:07:01 EDT 2024,ABSENT
+=======
+1282080,Louise Li,Wed Apr 03 23:12:42 EDT 2024,PRESENT
+98765,Someone,Wed Apr 03 23:12:42 EDT 2024,TARDY
+34567,Someoneelse,Wed Apr 03 23:12:42 EDT 2024,ABSENT
+>>>>>>> feature/database

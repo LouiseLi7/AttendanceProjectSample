@@ -1,0 +1,33 @@
+{
+"Course Name": "CS 123",
+"Lecture ID": "3_2",
+"Attendance": {
+"1282080": {
+"Student Name": "Louise Li",
+<<<<<<< HEAD
+"Time": "Fri Apr 05 12:07:01 EDT 2024",
+=======
+"Time": "Wed Apr 03 23:12:42 EDT 2024",
+>>>>>>> feature/database
+"Status": "PRESENT"
+},
+"98765": {
+"Student Name": "Someone",
+<<<<<<< HEAD
+"Time": "Fri Apr 05 12:07:01 EDT 2024",
+=======
+"Time": "Wed Apr 03 23:12:42 EDT 2024",
+>>>>>>> feature/database
+"Status": "TARDY"
+},
+"34567": {
+"Student Name": "Someoneelse",
+<<<<<<< HEAD
+"Time": "Fri Apr 05 12:07:01 EDT 2024",
+=======
+"Time": "Wed Apr 03 23:12:42 EDT 2024",
+>>>>>>> feature/database
+"Status": "ABSENT"
+}
+}
+}

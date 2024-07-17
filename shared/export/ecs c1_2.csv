@@ -1,0 +1,8 @@
+Student ID,Student Name,Time,Status
+<<<<<<< HEAD
+22,44,Fri Apr 05 12:07:01 EDT 2024,ABSENT
+23,45,Fri Apr 05 12:07:01 EDT 2024,TARDY
+=======
+22,44,Wed Apr 03 23:12:42 EDT 2024,ABSENT
+23,45,Wed Apr 03 23:12:42 EDT 2024,TARDY
+>>>>>>> feature/database

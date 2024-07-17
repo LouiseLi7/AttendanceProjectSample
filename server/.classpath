@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="build/resources/test" path="src/test/resources">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+			<attribute name="resource" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="build/classes/java/test" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="build/resources/main" path="src/main/resources">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+			<attribute name="resource" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="build/classes/java/main" path="src/main/java">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="build/classes/java/test" path="build/generated/sources/annotationProcessor/java/test">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="build/classes/java/main" path="build/generated/sources/annotationProcessor/java/main">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/JavaSE-17">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-gmail/v1-rev20220404-2.0.0/66aadab67169b27e504fb5fb8eed55f17c005756/google-api-services-gmail-v1-rev20220404-2.0.0.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-gmail/v1-rev20220404-2.0.0/58863446200e8581348ef62a59b5d686748e5267/google-api-services-gmail-v1-rev20220404-2.0.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-text/1.11.0/2bb044b7717ec2eccaf9ea7769c1509054b50e9a/commons-text-1.11.0.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-text/1.11.0/495883e4f3d80c80f15f6a5ae0e2b4a81184a9b5/commons-text-1.11.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/19.0.2.1/2667dcd38eb1c7d13998b9ce7ff7dd4f9b63c540/javafx-base-19.0.2.1.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/19.0.2.1/62bed0431de744402d1fdd817c9d9adc150db2e8/javafx-base-19.0.2.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client-java6/1.34.1/af6b85ed729e96a5257741986e823aa241f3d9a4/google-oauth-client-java6-1.34.1.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client-java6/1.34.1/c4ff38f141951e45e3aaf73288eba3841274d34f/google-oauth-client-java6-1.34.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.12.0/d5692f0526415fcc6de94bb5bfbd3afd9dd3b3e5/checker-qual-3.12.0.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.12.0/10dacb8b36398debceca36cd0db5f3316967f80e/checker-qual-3.12.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client/1.34.1/4a4f88c5e13143f882268c98239fb85c3b2c6cb2/google-oauth-client-1.34.1.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client/1.34.1/50534e310dc6e344920e02c2fa9368c631a2a43e/google-oauth-client-1.34.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client/1.42.1/808ea5d28383a32db7531a19462d45266ad0745f/google-http-client-1.42.1.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client/1.42.1/1ed04b6171c92a3c0ebfe26c9bd55d97bac0e4b0/google-http-client-1.42.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.9.0/8a1167e089096758b49f9b34066ef98b2f4b37aa/gson-2.9.0.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.9.0/83f964c0d36cda6b05269fdd43abd0f553a17c84/gson-2.9.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/19.0.2.1/549489ad677f208cc4b399fdf1facc46dd1d06ef/javafx-fxml-19.0.2.1-mac-aarch64.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/19.0.2.1/a823c346273cf6ec8e6b02daca37d2adadd0bd4b/javafx-fxml-19.0.2.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.13.0/b7263237aa89c1f99b327197c41d0669707a462e/commons-lang3-3.13.0.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.13.0/c035e3c80a649b8a1b2e533ff69317304accb247/commons-lang3-3.13.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.15/7f2e0c573eaa7a74bac2e89b359e1f73d92a0a1d/httpcore-4.4.15.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.15/2ab1724e80d075698903a49f5e8fa90b077937ac/httpcore-4.4.15-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.11/3acb4705652e16236558f0f4f2192cc33c3bd189/commons-codec-1.11.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.11/bce4ba84fd527950e35040b20a991c63e90e2850/commons-codec-1.11-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.mysql/mysql-connector-j/8.3.0/1cc7fa5d61f4bbc113531a4ba6d85d41cf3d57e1/mysql-connector-j-8.3.0.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.mysql/mysql-connector-j/8.3.0/8d17dc45e67cc13840ad6ee05e31adabe65e804c/mysql-connector-j-8.3.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/19.0.2.1/c1f87742c6d96f3e68334fa53d58b343f254f59f/javafx-graphics-19.0.2.1.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/19.0.2.1/c1bbdad790488fe6956bcdd1f919c86d8bbbbeb3/javafx-graphics-19.0.2.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.11.0/c5a0ace696d3f8b1c1d8cc036d8c03cc0cbe6b69/error_prone_annotations-2.11.0.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.11.0/d060e42b6aa896a3abe2ec612e1cf8cc307f8a49/error_prone_annotations-2.11.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.9/569b1752705da98f49aabe2911cc956ff7d8ed9d/jackson-core-2.8.9.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.9/8cf3613202ddcd495137f8cb944e2da69964a641/jackson-core-2.8.9-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.9/4dfca3975be3c1a98eacb829e70f02e9a71bc159/jackson-databind-2.8.9.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.9/98e1b4171628d8f230f6a60b248de84ed04fab0d/jackson-databind-2.8.9-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.4/d52b9abcd97f38c81342bb7e7ae1eee9b73cba51/commons-beanutils-1.9.4.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.4/f00e0ba867d1810f255876631ab440e0725a9af0/commons-beanutils-1.9.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.25.1/2933a5c3f022456d8842323fe0d7fb2d25a7e3c7/protobuf-java-3.25.1.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.25.1/4987d65351b8ab80c02e9bf8491b9285dba12a8f/protobuf-java-3.25.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/19.0.2.1/64db28799e61e0f8f51e471c732599b2a6961803/javafx-graphics-19.0.2.1-mac-aarch64.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/19.0.2.1/c1bbdad790488fe6956bcdd1f919c86d8bbbbeb3/javafx-graphics-19.0.2.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-context/1.27.2/1789190601b7a5361e4fa52b6bc95ec2cd71e854/grpc-context-1.27.2.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-context/1.27.2/56fd774c8d930300b48bf0b8b280ac8e2002d3cf/grpc-context-1.27.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.4/62ebe7544cb7164d87e0637a2a6a2bdc981395e8/commons-collections4-4.4.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.4/6260e416ff273ee938b31b0a8e512a367b1ee500/commons-collections4-4.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/19.0.2.1/1d0d887c492330ed527b0614d115a4f32d2d05a4/javafx-base-19.0.2.1-mac-aarch64.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/19.0.2.1/62bed0431de744402d1fdd817c9d9adc150db2e8/javafx-base-19.0.2.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.json/json/20210307/528c8df3757e8bcf151817b1d7b9b434f6aa08d5/json-20210307.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.json/json/20210307/cf1c333bedf1d9d554b5c3990379b3180c4b0906/json-20210307-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.1-jre/60458f877d055d0c9114d9e1a2efb737b4bc282c/guava-31.1-jre.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.1-jre/c388a68bc2b17a314dfa7c769d858ada0fc32dcf/guava-31.1-jre-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/io.opencensus/opencensus-api/0.31.1/66a60c7201c2b8b20ce495f0295b32bb0ccbbc57/opencensus-api-0.31.1.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/io.opencensus/opencensus-api/0.31.1/2473574e7bd949d01193671f814872074b4c7015/opencensus-api-0.31.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1d064e61aad6c51cc77f9b59dc2cccc78e792f5a/failureaccess-1.0.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-gson/1.42.1/19528e0766bbd63187ca0a8d3f5d77577c2c10b5/google-http-client-gson-1.42.1.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-gson/1.42.1/ca933fb21c3141d412df6b475d59b7b9cbb63829/google-http-client-gson-1.42.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/b19b5927c2c25b6c70f093767041e641ae0b1b35/jsr305-3.0.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/45b426f7796b741035581a176744d91090e2e6fb/jackson-annotations-2.8.0.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/29a1a95363d497e856c0a7d682e4f7973e334068/jackson-annotations-2.8.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/78c50ebda5784937ca1615fc0e1d0cb35857d572/commons-collections-3.2.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/19.0.2.1/5cd256c5fc0974ed662b48ee8da232f8b736fe8a/javafx-controls-19.0.2.1.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/19.0.2.1/d9c6d91e5c90f150191b6e0b5f60fb5a07fd47ae/javafx-controls-19.0.2.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/19.0.2.1/3a14bd5f3ebe45d344c1f2bade0fe074e6ea2a83/javafx-controls-19.0.2.1-mac-aarch64.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/19.0.2.1/d9c6d91e5c90f150191b6e0b5f60fb5a07fd47ae/javafx-controls-19.0.2.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.api-client/google-api-client/2.0.0/c3daf5048a26a73182b5e6c81ad141fb859f0787/google-api-client-2.0.0.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.api-client/google-api-client/2.0.0/92422a6f8b10365184c32c27439e295286d27cc4/google-api-client-2.0.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.opencsv/opencsv/5.9/284ea0b60a24b71a530100783185e7d547ab5339/opencsv-5.9.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.opencsv/opencsv/5.9/227b624b5548fb643ba25d2fa7708e3400a4b9d4/opencsv-5.9-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-apache-v2/1.42.1/949cc0ed789e76c1ec539d8a5e60ee527b22b6c4/google-http-client-apache-v2-1.42.1.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-apache-v2/1.42.1/89b66e55cdda80024849d7e3762ba62e18a7a30d/google-http-client-apache-v2-1.42.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client-jetty/1.34.1/a6aff2c1be148bac622e5048e20f536f71b3380d/google-oauth-client-jetty-1.34.1.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client-jetty/1.34.1/71faecf289f17332db787d84ca22dd217c97251f/google-oauth-client-jetty-1.34.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/io.opencensus/opencensus-contrib-http-util/0.31.1/3c13fc5715231fadb16a9b74a44d9d59c460cfa8/opencensus-contrib-http-util-0.31.1.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/io.opencensus/opencensus-contrib-http-util/0.31.1/1c6d09598fff894dfc4bfd03aeb68417d1176374/opencensus-contrib-http-util-0.31.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.3/ba035118bc8bac37d7eff77700720999acd9986d/j2objc-annotations-1.3.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.3/d26c56180205cbb50447c3eca98ecb617cf9f58b/j2objc-annotations-1.3-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/ecf26c7507d67782a3bbd148d170b31dfad001aa/commons-logging-1.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.13/e5f6cae5ca7ecaac1ec2827a9e2d65ae2869cada/httpclient-4.5.13.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.13/9654e91a61d7662c36be6710ef8e720c0e3f9807/httpclient-4.5.13-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.10.14/627b576d22189363c49eb59859664490ae230b38/byte-buddy-agent-1.10.14.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.10.14/e38eda86eceb2110b5f3f73d1d0a3ce54f44e9ca/byte-buddy-agent-1.10.14-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.testfx/testfx-junit5/4.0.16-alpha/8b30294c1e6a1086dd8cf445b5deeda846be1424/testfx-junit5-4.0.16-alpha.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.testfx/testfx-junit5/4.0.16-alpha/762f05b802efffb6de9c149ca8b84062a16b5997/testfx-junit5-4.0.16-alpha-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.13.2/bb7b963fe752f69f055df0025691eceb83ce0c5d/assertj-core-3.13.2.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.13.2/616a8ca81b9a1a58e3c8cd8c5d7395eb548ce57/assertj-core-3.13.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/41d55b3c2254de9837b4ec8923cbd371b8a7eab5/opentest4j-1.2.0-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/3.3.3/4878395d4e63173f3825e17e5e0690e8054445f1/mockito-core-3.3.3.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/3.3.3/cd917802078ffceaa508aa75af70ef62aed20d22/mockito-core-3.3.3-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-module-junit4-common/2.0.9/661b819ad3e8b5cab72bea3816ba2602d82d7f00/powermock-module-junit4-common-2.0.9.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-module-junit4-common/2.0.9/19011224dc5440ab1f5a06b90c74f7da288e6d5d/powermock-module-junit4-common-2.0.9-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-reflect/2.0.9/4bb9ed43e5221926fb86cae44b445de110a51d05/powermock-reflect-2.0.9.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-reflect/2.0.9/ea2f38ebd091c996fd28394dda3d8d77dd905963/powermock-reflect-2.0.9-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.7.2/685f832f8c54dd40100f646d61aca88ed9545421/junit-jupiter-params-5.7.2.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.7.2/45d7318c86fa4c826fab267fadc0839d40267da2/junit-jupiter-params-5.7.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-api-support/2.0.9/65deba8a4207715b7d8fa6c1b8d8cac06e6ecb00/powermock-api-support-2.0.9.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-api-support/2.0.9/eb54f9398b1b38558a8081b9bcf087bcc43ae451/powermock-api-support-2.0.9-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-api-mockito2/2.0.9/7e16a11ab06b718121a7537476c55b3c9551ae03/powermock-api-mockito2-2.0.9.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-api-mockito2/2.0.9/937ddba0a4c5ad13921dec21ff4518e1db2061d6/powermock-api-mockito2-2.0.9-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.10.14/5288bd154aa7bc8ea81a658f60a790f646025832/byte-buddy-1.10.14.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.10.14/8d5dbca8667cb26af8ee3feada8a600bd54f0c12/byte-buddy-1.10.14-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.1/9420ba32c29217b54eebd26ff7f9234d31c3fbb2/hamcrest-2.1.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.1/aa6763235632b77fd9245c850b6a7dc09382314c/hamcrest-2.1-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-core/2.0.9/50e5d2652fd311ee9c33919dfadd44504a582210/powermock-core-2.0.9.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-core/2.0.9/4f7de5c1b67499068d64ee5ca5380c819bd1cd9b/powermock-core-2.0.9-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.27.0-GA/f63e6aa899e15eca8fdaa402a79af4c417252213/javassist-3.27.0-GA.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.27.0-GA/e5dea2989ab81731501c670be0d1514512dbc13a/javassist-3.27.0-GA-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.0.1/11cfac598df9dc48bb9ed9357ed04212694b7808/objenesis-3.0.1.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.0.1/4aaa3e228e1ae7c71ded703b8742c37c058057fd/objenesis-3.0.1-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.7.2/f4b4079732a9c537983324cfa4e46655f21d2c56/junit-jupiter-api-5.7.2.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.7.2/ebca04edd1975a8fd42846c4f6d0b8fec3d6efc1/junit-jupiter-api-5.7.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.7.2/34adfea6c13fc4a996cf38cdad80800ce850d198/junit-platform-commons-1.7.2.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.7.2/1ff6be63f8bb2ef0d8c20b771a1d9160b6077a81/junit-platform-commons-1.7.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.testfx/openjfx-monocle/jdk-12.0.1+2/f2e6ce15c4e09b8ff52964a4c05cd6a01a6b55b8/openjfx-monocle-jdk-12.0.1+2.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.testfx/openjfx-monocle/jdk-12.0.1+2/9b4f0fb0f78193909bef9ce1d65465cb712d8692/openjfx-monocle-jdk-12.0.1+2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.testfx/testfx-core/4.0.16-alpha/12d7481c9326282f1023bfae9b0f96d91738af96/testfx-core-4.0.16-alpha.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.testfx/testfx-core/4.0.16-alpha/adc219dc96c1c87fee48938bbab5a47be91df085/testfx-core-4.0.16-alpha-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/fc9dff4bb36d627bdc553de77e1f17efd790876c/apiguardian-api-1.1.0.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/f3c15fe970af864390c8d0634c9f16aca1b064a8/apiguardian-api-1.1.0-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.7.2/62faa742964a9d8dab8fdb4a0eab7b01441c171f/junit-jupiter-5.7.2.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.7.2/7009caa171d1d6af0f6f09dff25f9f574826a490/junit-jupiter-5.7.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-module-junit4/2.0.9/9f13da80a3d75cc9579b55389e919f661ec42f0/powermock-module-junit4-2.0.9.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-module-junit4/2.0.9/a5a85421c4f61c6078245dde5480ed4bc3e3dc99/powermock-module-junit4-2.0.9-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.7.2/2573770b46b8a199ed5f6b0f96fb99e468bfe891/junit-platform-engine-1.7.2.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.7.2/4d160bb45611331ab4feba5dde85ebceb05a824e/junit-platform-engine-1.7.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/1.7.2/9bcb72e95d291c9ff45c3f8c0a054abc764b4205/junit-platform-launcher-1.7.2.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/1.7.2/503b02634a84790ed5c8152c6bb57449af4bac9c/junit-platform-launcher-1.7.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.7.2/9415680a889f00b8205a094c5c487bc69dc7077d/junit-jupiter-engine-5.7.2.jar" sourcepath="/Users/louiseli/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.7.2/7c0d81d9af26a35e3f552eaaad2aa6867218d534/junit-jupiter-engine-5.7.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="/shared">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

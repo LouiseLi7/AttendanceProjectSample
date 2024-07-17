@@ -1,0 +1,14 @@
+How to install mysql and set up a user
+
+sudo apt-install mysql-server
+https://stackoverflow.com/a/16556534
+https://stackoverflow.com/a/2840358
+
+Tutorial for DAO Setup
+
+https://balusc.omnifaces.org/2008/07/dao-tutorial-data-layer.html
+
+mysql> CREATE USER 'java'@'localhost' IDENTIFIED BY 'password';
+mysql> GRANT ALL ON javabase.* TO 'java'@'localhost';
+
+mysql> source databaseSetup.sql
